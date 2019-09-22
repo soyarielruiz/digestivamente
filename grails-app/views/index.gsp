@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
+    <title>Digestivamente</title>
 </head>
 <body>
 <content tag="nav">
@@ -58,11 +58,10 @@
             Abajo se pueden encontrar los formularios para dar de alta a las principales entidades del sistema.
         </p>
 
-        <div id="controllers" role="navigation">
-            <h2>Vistas disponibles:</h2>
-            <ul>
+        <div id="controllers" role="navigation" class="col-3 mx-auto">
+            <ul class="list-inline mx-auto center justify-content-center">
                 <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                    <li class="controller">
+                    <li class="controller alert alert-primary mx-auto">
                         <g:link controller="${c.logicalPropertyName}">${c.getStaticPropertyValue('nombre', String)}</g:link>
                     </li>
                 </g:each>
