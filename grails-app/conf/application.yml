@@ -101,8 +101,13 @@ dataSource:
     pooled: true
     jmxExport: true
     driverClassName: org.postgresql.Driver
-    username: gvwdszketcjyta
-    password: 528d621ef2b0cc0b56b92e3283405ba7f8ca8f697c6d64cf8240eafa2f3c1008
+    username: user
+    password: password
+    url: jdbc:postgresql://gvwdszketcjyta:528d621ef2b0cc0b56b92e3283405ba7f8ca8f697c6d64cf8240eafa2f3c1008@ec2-54-227-251-33.compute-1.amazonaws.com:5432/d881st85t4p718
+    dbCreate: update
+
+hibernate:
+    dialect: net.kaleidos.hibernate.PostgresqlExtensionsDialect
 
 environments:
     development:
@@ -116,7 +121,7 @@ environments:
     production:
         dataSource:
             dbCreate: update
-            url: postgres://gvwdszketcjyta:528d621ef2b0cc0b56b92e3283405ba7f8ca8f697c6d64cf8240eafa2f3c1008@ec2-54-227-251-33.compute-1.amazonaws.com:5432/d881st85t4p718
+            url: jdbc:postgres://gvwdszketcjyta:528d621ef2b0cc0b56b92e3283405ba7f8ca8f697c6d64cf8240eafa2f3c1008@ec2-54-227-251-33.compute-1.amazonaws.com:5432/d881st85t4p718
             properties:
                 jmxEnabled: true
                 initialSize: 5
