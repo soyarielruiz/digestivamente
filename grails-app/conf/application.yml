@@ -100,9 +100,9 @@ hibernate:
 dataSource:
     pooled: true
     jmxExport: true
-    driverClassName: org.h2.Driver
-    username: sa
-    password: ''
+    driverClassName: org.postgresql.Driver
+    username: gvwdszketcjyta
+    password: 528d621ef2b0cc0b56b92e3283405ba7f8ca8f697c6d64cf8240eafa2f3c1008
 
 environments:
     development:
@@ -115,7 +115,7 @@ environments:
             url: jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
     production:
         dataSource:
-            dbCreate: none
+            dbCreate: update
             url: postgres://gvwdszketcjyta:528d621ef2b0cc0b56b92e3283405ba7f8ca8f697c6d64cf8240eafa2f3c1008@ec2-54-227-251-33.compute-1.amazonaws.com:5432/d881st85t4p718
             properties:
                 jmxEnabled: true
