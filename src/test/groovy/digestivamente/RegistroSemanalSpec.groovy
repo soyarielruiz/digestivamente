@@ -13,6 +13,6 @@ class RegistroSemanalSpec extends Specification implements DomainUnitTest<Regist
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

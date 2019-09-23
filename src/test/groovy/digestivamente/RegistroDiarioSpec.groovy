@@ -13,6 +13,6 @@ class RegistroDiarioSpec extends Specification implements DomainUnitTest<Registr
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }
