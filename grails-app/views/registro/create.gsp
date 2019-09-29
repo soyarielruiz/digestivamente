@@ -27,7 +27,12 @@
             </g:hasErrors>
             <g:form resource="${this.registro}" method="POST">
                 <fieldset class="form">
-                    <f:all bean="registro"/>
+                    <f:field bean="registro" property="escalaBristol"/>
+                    <f:field bean="registro" property="sensacionesFisicas"/>
+                    <f:field bean="registro" property="emociones"/>
+                    <f:field bean="registro" property="intensidadEmocional"/>
+                    <f:field bean="registro" property="pensamiento"/>
+                    <f:field bean="registro" property="conducta"/>
                 </fieldset>
                 <fieldset class="buttons">
                     <g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />

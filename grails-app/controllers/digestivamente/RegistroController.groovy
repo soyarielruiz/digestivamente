@@ -2,6 +2,8 @@ package digestivamente
 
 import grails.validation.ValidationException
 import static org.springframework.http.HttpStatus.*
+import java.time.format.DateTimeFormatter
+import java.time.LocalDateTime
 
 class RegistroController {
 
@@ -28,6 +30,8 @@ class RegistroController {
             notFound()
             return
         }
+        //Adding local time
+        registro.hora = LocalDateTime.now()
 
         try {
             registroService.save(registro)

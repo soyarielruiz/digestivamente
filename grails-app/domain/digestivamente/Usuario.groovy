@@ -8,6 +8,7 @@ class Usuario {
     String apellidos
     Date fechaDeNacimiento
     String sexo
+    String email
     String nivelEducativo
     String trabajo
     String lugarDeResidencia
@@ -31,6 +32,7 @@ class Usuario {
         apellidos size: 3..255, blank: false, nullable: false
         fechaDeNacimiento nullable: false
         sexo inList: ["M","F","N/A"], nullable: false
+        email size: 8..30, nullable:false, email:true
         nivelEducativo inList: ["Primario", "Secundario", "Terciario", "Universitario", "N/A"], nullable: false
         trabajo size: 3..255, blank: false, nullable: false
         lugarDeResidencia size: 3..255, blank: false, nullable: false
