@@ -27,12 +27,18 @@
             </g:hasErrors>
             <g:form resource="${this.registro}" method="POST">
                 <fieldset class="form">
-                    <f:field bean="registro" property="escalaBristol"/>
-                    <f:field bean="registro" property="sensacionesFisicas"/>
-                    <f:field bean="registro" property="emociones"/>
-                    <f:field bean="registro" property="intensidadEmocional"/>
-                    <f:field bean="registro" property="pensamiento"/>
-                    <f:field bean="registro" property="conducta"/>
+                    ¿Cómo fue al baño el día de hoy?
+                    <g:img file="bristol.jpg" width="420" height="210"/>
+                    <f:field bean="registro" property= "escalaBristol"/>
+                    <f:field bean="registro" property= "sensacionesFisicas"/>
+                    ¿Cómo se siente?
+                    <g:img file="estado_animo.jpg" width="300" height="100"/>
+                    <f:field bean="registro" property= "emociones"/>
+                    ¿Con qué intensidad se sintió así?
+                    <g:img file="intensidad.jpg" width="250" height="100"/>
+                    <f:field bean="registro" property= "intensidadEmocional"/>
+                    <f:field bean="registro" property= "pensamiento"/>
+                    <f:field bean="registro" property= "conducta"/>
                 </fieldset>
                 <fieldset class="buttons">
                     <g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
