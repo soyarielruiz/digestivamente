@@ -59,6 +59,9 @@ class RegistroController {
             return
         }
 
+        //Adding local time
+        registro.hora = LocalDateTime.now()
+
         try {
             registroService.save(registro)
         } catch (ValidationException e) {

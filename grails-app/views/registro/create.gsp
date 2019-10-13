@@ -28,14 +28,14 @@
             <g:form resource="${this.registro}" method="POST">
                 <fieldset class="form">
                     ¿Cómo fue al baño el día de hoy?
-                    <g:img file="bristol.jpg" width="420" height="210"/>
+                    <g:img uri="https://i.ibb.co/nRzpgDq/bristol.jpg" width="420" height="210"/>
                     <f:field bean="registro" property= "escalaBristol"/>
                     <f:field bean="registro" property= "sensacionesFisicas"/>
                     ¿Cómo se siente?
-                    <g:img file="estado_animo.jpg" width="300" height="100"/>
+                    <g:img uri="https://i.ibb.co/TBTWw4z/estado-animo.jpg" width="300" height="100"/>
                     <f:field bean="registro" property= "emociones"/>
                     ¿Con qué intensidad se sintió así?
-                    <g:img file="intensidad.jpg" width="250" height="100"/>
+                    <g:img uri="https://i.ibb.co/Kxns1N3/intensidad.jpg" width="250" height="100"/>
                     <f:field bean="registro" property= "intensidadEmocional"/>
                     <f:field bean="registro" property= "pensamiento"/>
                     <f:field bean="registro" property= "conducta"/>
