@@ -9,7 +9,8 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/index")
+        "/"(view:"/indexImage" , controller: "indexImage")
+        "/index"(view:"/indexList")
         "500"(view:'/error')
         "404"(view:'/notFound')
     }

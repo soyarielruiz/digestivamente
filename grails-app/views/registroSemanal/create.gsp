@@ -26,8 +26,9 @@
             </ul>
             </g:hasErrors>
             <g:form resource="${this.registroSemanal}" method="POST">
-                <fieldset class="form">
-                    <f:all bean="registroSemanal"/>
+                <fieldset class="form"> 
+                    ¿Pasó algo esta semana?
+                    <f:field bean="registroSemanal" property= "estresoresSemanales"/>
                 </fieldset>
                 <fieldset class="buttons">
                     <g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />

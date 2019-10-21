@@ -37,7 +37,9 @@
                     ¿Con qué intensidad se sintió así?
                     <g:img uri="https://i.ibb.co/Kxns1N3/intensidad.jpg" width="250" height="100"/>
                     <f:field bean="registro" property= "intensidadEmocional"/>
+                    ¿Qué estás pensando?
                     <f:field bean="registro" property= "pensamiento"/>
+                    ¿Qué estás haciendo?
                     <f:field bean="registro" property= "conducta"/>
                 </fieldset>
                 <fieldset class="buttons">
